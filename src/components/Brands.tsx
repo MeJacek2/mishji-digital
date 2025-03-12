@@ -2,6 +2,7 @@
 
 import React from 'react';
 import Image from 'next/image';
+import { getImagePath } from '../utils/imagePath';
 
 const brands = [
   {
@@ -61,7 +62,7 @@ const Brands = () => {
                   <div className="relative h-full flex items-center justify-center px-4 
                     hover:scale-105 transition-transform duration-300">
                     <Image
-                      src={brand.logo}
+                      src={getImagePath(brand.logo)}
                       alt={brand.alt}
                       width={brand.width}
                       height={brand.height}

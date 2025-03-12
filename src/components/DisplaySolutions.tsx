@@ -2,6 +2,7 @@
 
 import React from 'react';
 import Image from 'next/image';
+import { getImagePath } from '../utils/imagePath';
 
 const solutions = [
   {
@@ -49,7 +50,7 @@ const DisplaySolutions = () => {
                 <div className="relative h-[300px] sm:h-[400px] rounded-2xl overflow-hidden">
                   <div className="absolute inset-0 bg-gradient-to-br from-blue-600/20 to-purple-600/20 mix-blend-multiply rounded-2xl" />
                   <Image
-                    src={solution.image}
+                    src={solution.image.startsWith('http') ? solution.image : getImagePath(solution.image)}
                     alt={solution.title}
                     fill
                     className="object-cover"
