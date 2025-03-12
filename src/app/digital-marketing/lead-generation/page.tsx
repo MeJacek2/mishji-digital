@@ -1,3 +1,4 @@
+import { getImagePath } from '../../../utils/imagePath';
 import React from 'react';
 import Image from 'next/image';
 import ServicePageLayout from '../../../components/ServicePageLayout';

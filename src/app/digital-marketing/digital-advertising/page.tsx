@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import { getImagePath } from '../../../utils/imagePath';
 import ServicePageLayout from '../../../components/ServicePageLayout';
 
 const DigitalAdvertisingPage = () => {

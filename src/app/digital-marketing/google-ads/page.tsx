@@ -1,3 +1,4 @@
+import { getImagePath } from '../../../utils/imagePath';
 'use client';
 
 import React from 'react';
