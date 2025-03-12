@@ -1,5 +1,5 @@
-import { getImagePath } from '../../../utils/imagePath';
 'use client';
+import { getImagePath } from '../../../utils/imagePath';
 
 import React from 'react';
 import Image from 'next/image';
