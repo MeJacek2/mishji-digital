@@ -14,7 +14,7 @@ const brands = [
   },
   {
     name: 'OneScreen',
-    logo: '/brands/onescreen2.png',
+    logo: '/brands/OneScreen2.png',
     alt: 'OneScreen Logo',
     width: 225,
     height: 68
