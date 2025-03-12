@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import Image from 'next/image';
+import { getImagePath } from '../utils/imagePath';
 
 const projects = [
   {
@@ -102,7 +103,7 @@ const Portfolio = () => {
             >
               <div className="relative h-64 w-full">
                 <Image
-                  src={project.image}
+                  src={project.image.startsWith('http') ? project.image : getImagePath(project.image)}
                   alt={project.title}
                   fill
                   className="object-cover transition-transform duration-300 group-hover:scale-105"
