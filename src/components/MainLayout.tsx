@@ -3,6 +3,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { getImagePath } from '../utils/imagePath';
 
 const MainLayout = ({ children }: { children: React.ReactNode }) => {
   const [isDisplaySolutionsOpen, setIsDisplaySolutionsOpen] = useState(false);
@@ -58,7 +59,7 @@ const MainLayout = ({ children }: { children: React.ReactNode }) => {
             {/* Logo */}
             <Link href="/" className="flex items-center">
               <Image
-                src="/images/logo.png"
+                src={getImagePath('/images/logo.png')}
                 alt="Mishji Digital"
                 width={140}
                 height={50}
@@ -248,7 +249,7 @@ const MainLayout = ({ children }: { children: React.ReactNode }) => {
                       <div className="w-[300px] bg-[#b62784] p-8 text-white flex flex-col items-center justify-center text-center">
                         <div className="bg-white rounded-lg px-6 py-4 mb-8">
                           <Image
-                            src="/images/logo-white.png"
+                            src={getImagePath('/images/logo-white.png')}
                             alt="Mishji Digital"
                             width={140}
                             height={50}
@@ -406,7 +407,7 @@ const MainLayout = ({ children }: { children: React.ReactNode }) => {
             {/* Company Info */}
             <div className="col-span-1">
               <Image
-                src="/images/logo-colorbg.png"
+                src={getImagePath('/images/logo-colorbg.png')}
                 alt="Mishji Digital"
                 width={120}
                 height={40}
