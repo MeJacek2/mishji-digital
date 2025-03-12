@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Add placeholder background for missing images */
+img[alt]:not([src]), 
+img[src=""] {
+  background-color: #f3f4f6;
+  position: relative;
+}
+
+img[alt]:not([src])::after,
+img[src=""]::after {
+  content: attr(alt);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #6b7280;
+  font-size: 0.875rem;
+  text-align: center;
+} 

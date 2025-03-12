@@ -1,0 +1,117 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Animations */
+@keyframes pulse-slow {
+  0%, 100% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+@keyframes highlight {
+  0% {
+    background-size: 0% 100%;
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    background-size: 100% 100%;
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.animate-fade-in {
+  animation: fade-in 1s ease-out forwards;
+}
+
+.typing-container {
+  display: inline-block;
+  position: relative;
+  padding-right: 4px;
+}
+
+.typing-container::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 10%;
+  height: 80%;
+  width: 3px;
+  background: #b62685;
+  animation: blink 0.75s step-end infinite;
+}
+
+.typing-text {
+  display: inline-block;
+  width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 3s steps(40, end) forwards;
+}
+
+.highlight-text {
+  display: inline-block;
+  background: linear-gradient(120deg, #b6268533 0%, #b6268533 100%);
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
+  background-position: 0 0;
+  padding: 0.5rem 1rem;
+  margin: -0.5rem -1rem;
+  opacity: 0;
+  transform: translateY(10px);
+  animation: highlight 1s ease-out forwards;
+}
+
+/* Placeholder styles */
+img[alt]:not([src]), 
+img[src=""] {
+  background-color: #f3f4f6;
+  position: relative;
+}
+
+img[alt]:not([src])::after,
+img[src=""]::after {
+  content: attr(alt);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #6b7280;
+  font-size: 0.875rem;
+  text-align: center;
+}
+
+/* Scroll Animation Classes */
+.animate-slide-in {
+  opacity: 1 !important;
+  transform: translate(0, 0) !important;
+} 
