@@ -7,8 +7,8 @@ const nextConfig = {
     unoptimized: true,
   },
   output: 'export',
-  basePath: '',
-  assetPrefix: '',
+  basePath: '/mishji-digital',
+  assetPrefix: '/mishji-digital',
 }
 
 module.exports = nextConfig 
