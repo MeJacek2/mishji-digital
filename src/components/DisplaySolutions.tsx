@@ -9,13 +9,13 @@ const solutions = [
     title: 'LED Video Walls',
     description: 'High-resolution LED video walls for stunning visual impact in any environment.',
     features: ['Custom sizes available', 'High brightness', 'Seamless integration', '24/7 operation'],
-    image: '/images/led-video-wall-setup.jpg'
+    image: getImagePath('/images/led-video-wall-setup.jpg')
   },
   {
     title: 'Interactive Touch Screens',
     description: 'Advanced touch screen solutions for immersive and engaging interactive experiences.',
     features: ['Multi-touch capability', 'Ultra-responsive touch', 'Interactive software solutions', 'Custom applications'],
-    image: '/images/Education_scenario_pc_l.png'
+    image: getImagePath('/images/Education_scenario_pc_l.png')
   },
   {
     title: 'Digital Marketing',

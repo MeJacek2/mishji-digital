@@ -9,7 +9,7 @@ const projects = [
     title: 'Corporate LED Installation',
     category: 'Display Solutions',
     description: 'Large-scale customized LED screen installation for corporate headquarters',
-    image: '/images/Large-scale-LED.png',
+    image: getImagePath('/images/Large-scale-LED.png'),
   },
   {
     title: 'E-commerce Growth Campaign',

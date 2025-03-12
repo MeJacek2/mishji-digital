@@ -3,6 +3,7 @@
 import React from 'react';
 import Image from 'next/image';
 import MainLayout from './MainLayout';
+import { getImagePath } from '../utils/imagePath';
 
 interface ServicePageProps {
   title: string;
@@ -19,7 +20,7 @@ const ServicePageLayout = ({ title, description, heroImage, children }: ServiceP
         <section className="relative h-[60vh] flex items-center justify-center">
           <div className="absolute inset-0">
             <Image
-              src={heroImage}
+              src={heroImage.startsWith('http') ? heroImage : getImagePath(heroImage)}
               alt={title}
               fill
               className="object-cover"
