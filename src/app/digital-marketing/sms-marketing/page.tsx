@@ -9,7 +9,7 @@ const SMSMarketingPage = () => {
     <ServicePageLayout
       title="SMS Marketing Services"
       description="Drive instant engagement with targeted SMS marketing campaigns"
-      heroImage="/images/services/sms-marketing-hero.jpg"
+      heroImage={getImagePath("/images/services/sms-marketing-hero.jpg")}
     >
       <div className="space-y-16">
         {/* Introduction */}
@@ -181,7 +181,7 @@ const SMSMarketingPage = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 items-center">
             <div className="relative h-[400px]">
               <Image
-                src="/images/services/sms-marketing-benefits.jpg"
+                src={getImagePath("/images/services/sms-marketing-benefits.jpg")}
                 alt="SMS Marketing Benefits"
                 fill
                 className="object-cover"

@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { getImagePath } from '../utils/imagePath';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,10 +15,10 @@ const Navbar = () => {
           <div className="flex-shrink-0">
             <Link href="/" className="flex items-center">
               <Image
-                src="/mishji-logo.png"
-                alt="Mishji"
-                width={120}
-                height={40}
+                src={getImagePath('/mishji-logo.png')}
+                alt="Mishji Digital"
+                width={140}
+                height={50}
                 className="h-10 w-auto"
               />
             </Link>

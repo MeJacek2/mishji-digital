@@ -7,7 +7,7 @@ const SEOPage = () => {
     <ServicePageLayout
       title="Search Engine Optimization Services"
       description="Drive organic traffic and improve search rankings with data-driven SEO strategies"
-      heroImage="/images/services/seo-hero.jpg"
+      heroImage={getImagePath("/images/services/seo-hero.jpg")}
     >
       <div className="space-y-16">
         {/* Introduction */}
@@ -206,7 +206,7 @@ const SEOPage = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 items-center">
             <div className="relative h-[400px]">
               <Image
-                src="/images/services/seo-benefits.jpg"
+                src={getImagePath("/images/services/seo-benefits.jpg")}
                 alt="SEO Benefits"
                 fill
                 className="object-cover"

@@ -2,6 +2,7 @@
 
 import React from 'react';
 import Image from 'next/image';
+import { getImagePath } from '../../utils/imagePath';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 
@@ -14,7 +15,7 @@ const AboutPage = () => {
         <section className="relative h-[60vh] flex items-center justify-center">
           <div className="absolute inset-0">
             <Image
-              src="/images/about-hero.jpg"
+              src={getImagePath('/images/about-hero.jpg')}
               alt="About Us"
               fill
               className="object-cover"
@@ -45,7 +46,7 @@ const AboutPage = () => {
               </div>
               <div className="relative h-[400px] rounded-2xl overflow-hidden">
                 <Image
-                  src="/images/company-story.jpg"
+                  src={getImagePath('/images/company-story.jpg')}
                   alt="Our Story"
                   fill
                   className="object-cover"
@@ -94,7 +95,7 @@ const AboutPage = () => {
               <div className="bg-white rounded-2xl shadow-sm overflow-hidden">
                 <div className="relative h-48">
                   <Image
-                    src="/images/led-video-wall-setup.jpg"
+                    src={getImagePath('/images/led-video-wall-setup.jpg')}
                     alt="LED Video Walls"
                     fill
                     className="object-cover"
@@ -132,7 +133,7 @@ const AboutPage = () => {
               <div className="bg-white rounded-2xl shadow-sm overflow-hidden">
                 <div className="relative h-48">
                   <Image
-                    src="/images/Education_scenario_pc_l.png"
+                    src={getImagePath('/images/Education_scenario_pc_l.png')}
                     alt="Interactive Touch Screens"
                     fill
                     className="object-cover"
@@ -170,7 +171,7 @@ const AboutPage = () => {
               <div className="bg-white rounded-2xl shadow-sm overflow-hidden">
                 <div className="relative h-48">
                   <Image
-                    src="/images/digital-marketing.jpg"
+                    src={getImagePath('/images/digital-marketing.jpg')}
                     alt="Digital Marketing"
                     fill
                     className="object-cover"

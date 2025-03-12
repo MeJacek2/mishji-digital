@@ -9,7 +9,7 @@ const EmailMarketingPage = () => {
     <ServicePageLayout
       title="Email Marketing Services"
       description="Drive customer engagement and ROI with strategic email marketing campaigns"
-      heroImage="/images/services/email-marketing-hero.jpg"
+      heroImage={getImagePath("/images/services/email-marketing-hero.jpg")}
     >
       <div className="space-y-16">
         {/* Introduction */}
@@ -181,7 +181,7 @@ const EmailMarketingPage = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 items-center">
             <div className="relative h-[400px]">
               <Image
-                src="/images/services/email-marketing-benefits.jpg"
+                src={getImagePath("/images/services/email-marketing-benefits.jpg")}
                 alt="Email Marketing Benefits"
                 fill
                 className="object-cover"

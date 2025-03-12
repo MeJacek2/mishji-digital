@@ -9,7 +9,7 @@ const GoogleAdsPage = () => {
     <ServicePageLayout
       title="Google Ads Services"
       description="Drive targeted traffic and maximize ROI with data-driven Google Ads campaigns"
-      heroImage="/images/services/google-ads-hero.jpg"
+      heroImage={getImagePath("/images/services/google-ads-hero.jpg")}
     >
       <div className="space-y-16">
         {/* Introduction */}
@@ -181,7 +181,7 @@ const GoogleAdsPage = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 items-center">
             <div className="relative h-[400px]">
               <Image
-                src="/images/services/google-ads-benefits.jpg"
+                src={getImagePath("/images/services/google-ads-benefits.jpg")}
                 alt="Google Ads Benefits"
                 fill
                 className="object-cover"

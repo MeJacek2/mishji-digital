@@ -7,7 +7,7 @@ const DigitalAdvertisingPage = () => {
     <ServicePageLayout
       title="Digital Advertising Services"
       description="Drive growth with comprehensive digital advertising solutions across all platforms"
-      heroImage="/images/services/digital-advertising-hero.jpg"
+      heroImage={getImagePath("/images/services/digital-advertising-hero.jpg")}
     >
       <div className="space-y-16">
         {/* Introduction */}
@@ -179,7 +179,7 @@ const DigitalAdvertisingPage = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 items-center">
             <div className="relative h-[400px]">
               <Image
-                src="/images/services/digital-advertising-benefits.jpg"
+                src={getImagePath("/images/services/digital-advertising-benefits.jpg")}
                 alt="Digital Advertising Benefits"
                 fill
                 className="object-cover"

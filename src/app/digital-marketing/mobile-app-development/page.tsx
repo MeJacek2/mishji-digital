@@ -7,7 +7,7 @@ const MobileAppDevelopmentPage = () => {
     <ServicePageLayout
       title="Mobile App Development Services"
       description="Create powerful mobile applications with cutting-edge technology and user-centric design"
-      heroImage="/images/services/mobile-app-development-hero.jpg"
+      heroImage={getImagePath("/images/services/mobile-app-development-hero.jpg")}
     >
       <div className="space-y-16">
         {/* Introduction */}
@@ -206,7 +206,7 @@ const MobileAppDevelopmentPage = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 items-center">
             <div className="relative h-[400px]">
               <Image
-                src="/images/services/mobile-app-development-benefits.jpg"
+                src={getImagePath("/images/services/mobile-app-development-benefits.jpg")}
                 alt="Mobile App Development Benefits"
                 fill
                 className="object-cover"

@@ -1,7 +1,10 @@
+'use client';
+
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import MainLayout from '../../components/MainLayout';
+import { getImagePath } from '../../utils/imagePath';
 
 const Header = () => {
   return (
@@ -11,11 +14,11 @@ const Header = () => {
           {/* Logo */}
           <Link href="/" className="flex items-center">
             <Image
-              src="/images/logo.svg"
-              alt="Clearwater"
-              width={150}
-              height={40}
-              priority
+              src={getImagePath('/images/logo.svg')}
+              alt="Digital Marketing Services"
+              width={140}
+              height={50}
+              className="h-10 w-auto"
             />
           </Link>
 

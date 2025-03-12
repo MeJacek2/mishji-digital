@@ -7,7 +7,7 @@ const MobileAdvertisingPage = () => {
     <ServicePageLayout
       title="Mobile Advertising Services"
       description="Reach your audience on mobile devices with targeted advertising solutions"
-      heroImage="/images/services/mobile-advertising-hero.jpg"
+      heroImage={getImagePath("/images/services/mobile-advertising-hero.jpg")}
     >
       <div className="space-y-16">
         {/* Introduction */}
@@ -206,7 +206,7 @@ const MobileAdvertisingPage = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 items-center">
             <div className="relative h-[400px]">
               <Image
-                src="/images/services/mobile-advertising-benefits.jpg"
+                src={getImagePath("/images/services/mobile-advertising-benefits.jpg")}
                 alt="Mobile Advertising Benefits"
                 fill
                 className="object-cover"

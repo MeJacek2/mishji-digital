@@ -2,36 +2,37 @@
 
 import React from 'react';
 import Image from 'next/image';
+import { getImagePath } from '../../utils/imagePath';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import ImageCarousel from '../../components/ImageCarousel';
 
 const indoorImages = [
-  { src: '/images/indoor-led-1.png', alt: 'Corporate Lobby LED Wall' },
-  { src: '/images/indoor-led-2.png', alt: 'Retail Store LED Display' },
-  { src: '/images/indoor-led-3.png', alt: 'Conference Room LED Screen' },
-  { src: '/images/indoor-led-4.png', alt: 'Exhibition Hall LED Display' }
+  { src: getImagePath('/images/indoor-led-1.png'), alt: 'Corporate Lobby LED Wall' },
+  { src: getImagePath('/images/indoor-led-2.png'), alt: 'Retail Store LED Display' },
+  { src: getImagePath('/images/indoor-led-3.png'), alt: 'Conference Room LED Screen' },
+  { src: getImagePath('/images/indoor-led-4.png'), alt: 'Exhibition Hall LED Display' }
 ];
 
 const outdoorImages = [
-  { src: '/images/outdoor-led-1.jpg', alt: 'Billboard LED Display' },
-  { src: '/images/outdoor-led-2.jpg', alt: 'Stadium LED Screen' },
-  { src: '/images/outdoor-led-3.jpg', alt: 'Building Facade LED' },
-  { src: '/images/outdoor-led-4.jpg', alt: 'Outdoor Advertising LED' }
+  { src: getImagePath('/images/outdoor-led-1.jpg'), alt: 'Billboard LED Display' },
+  { src: getImagePath('/images/outdoor-led-2.jpg'), alt: 'Stadium LED Screen' },
+  { src: getImagePath('/images/outdoor-led-3.jpg'), alt: 'Building Facade LED' },
+  { src: getImagePath('/images/outdoor-led-4.jpg'), alt: 'Outdoor Advertising LED' }
 ];
 
 const transparentImages = [
-  { src: '/images/transparent-led-1.jpg', alt: 'Store Window LED Display' },
-  { src: '/images/transparent-led-2.jpg', alt: 'Museum LED Installation' },
-  { src: '/images/transparent-led-3.jpg', alt: 'Shopping Mall LED Screen' },
-  { src: '/images/transparent-led-4.jpg', alt: 'Transparent LED Wall' }
+  { src: getImagePath('/images/transparent-led-1.jpg'), alt: 'Store Window LED Display' },
+  { src: getImagePath('/images/transparent-led-2.jpg'), alt: 'Museum LED Installation' },
+  { src: getImagePath('/images/transparent-led-3.jpg'), alt: 'Shopping Mall LED Screen' },
+  { src: getImagePath('/images/transparent-led-4.jpg'), alt: 'Transparent LED Wall' }
 ];
 
 const flexibleImages = [
-  { src: '/images/flexible-led-1.jpg', alt: 'Curved Wall LED Display' },
-  { src: '/images/flexible-led-2.jpg', alt: 'Column LED Wrap' },
-  { src: '/images/flexible-led-3.jpg', alt: 'Stage LED Screen' },
-  { src: '/images/flexible-led-4.jpg', alt: 'Creative LED Installation' }
+  { src: getImagePath('/images/flexible-led-1.jpg'), alt: 'Curved Wall LED Display' },
+  { src: getImagePath('/images/flexible-led-2.jpg'), alt: 'Column LED Wrap' },
+  { src: getImagePath('/images/flexible-led-3.jpg'), alt: 'Stage LED Screen' },
+  { src: getImagePath('/images/flexible-led-4.jpg'), alt: 'Creative LED Installation' }
 ];
 
 const LEDScreensPage = () => {
@@ -43,7 +44,7 @@ const LEDScreensPage = () => {
         <section className="relative h-[60vh] flex items-center justify-center">
           <div className="absolute inset-0">
             <Image
-              src="/images/led-hero.jpg"
+              src={getImagePath('/images/led-hero.jpg')}
               alt="LED Screen Solutions"
               fill
               className="object-cover"

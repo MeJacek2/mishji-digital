@@ -7,7 +7,7 @@ const MediaPlanningBuyingPage = () => {
     <ServicePageLayout
       title="Media Planning & Buying Services"
       description="Strategic media planning and buying solutions for maximum ROI"
-      heroImage="/images/services/media-planning-buying-hero.jpg"
+      heroImage={getImagePath("/images/services/media-planning-buying-hero.jpg")}
     >
       <div className="space-y-16">
         {/* Introduction */}
@@ -180,7 +180,7 @@ const MediaPlanningBuyingPage = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 items-center">
             <div className="relative h-[400px]">
               <Image
-                src="/images/services/media-planning-buying-benefits.jpg"
+                src={getImagePath("/images/services/media-planning-buying-benefits.jpg")}
                 alt="Media Planning & Buying Benefits"
                 fill
                 className="object-cover"

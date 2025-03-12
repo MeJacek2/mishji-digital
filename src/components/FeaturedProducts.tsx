@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
+import { getImagePath } from '../utils/imagePath';
 
 interface Product {
   id: number;
@@ -23,9 +24,9 @@ const products: Product[] = [
       'Intuitive Android 11 interface for smooth operation'
     ],
     images: [
-      '/products/viewboard-ifp8633-1.jpg',
-      '/products/viewboard-ifp8633-2.jpg',
-      '/products/viewboard-ifp8633-3.jpg'
+      getImagePath('/products/viewboard-ifp8633-1.jpg'),
+      getImagePath('/products/viewboard-ifp8633-2.jpg'),
+      getImagePath('/products/viewboard-ifp8633-3.jpg')
     ]
   },
   {
@@ -39,9 +40,9 @@ const products: Product[] = [
       'Android 13 OS powered by an octa-core CPU'
     ],
     images: [
-      '/products/viewboard-ifp8650-1.jpg',
-      '/products/viewboard-ifp8650-2.jpg',
-      '/products/viewboard-ifp8650-3.jpg'
+      getImagePath('/products/viewboard-ifp8650-1.jpg'),
+      getImagePath('/products/viewboard-ifp8650-2.jpg'),
+      getImagePath('/products/viewboard-ifp8650-3.jpg')
     ]
   },
   {
@@ -55,9 +56,9 @@ const products: Product[] = [
       'myViewBoard Manager for simplified display management'
     ],
     images: [
-      '/products/viewboard-ifp9850-1.jpg',
-      '/products/viewboard-ifp9850-2.jpg',
-      '/products/viewboard-ifp9850-3.jpg'
+      getImagePath('/products/viewboard-ifp9850-1.jpg'),
+      getImagePath('/products/viewboard-ifp9850-2.jpg'),
+      getImagePath('/products/viewboard-ifp9850-3.jpg')
     ]
   },
   {
@@ -71,8 +72,8 @@ const products: Product[] = [
       'Remote management and scheduling capabilities'
     ],
     images: [
-      '/products/viewsonic-vpcf5-w33-g1-1.jpg',
-      '/products/viewsonic-vpcf5-w33-g1-2.jpg'
+      getImagePath('/products/viewsonic-vpcf5-w33-g1-1.jpg'),
+      getImagePath('/products/viewsonic-vpcf5-w33-g1-2.jpg')
     ]
   },
   {
@@ -86,8 +87,8 @@ const products: Product[] = [
       'Mobile Software: iCMOB, gCMOB'
     ],
     images: [
-      '/products/cp-unr-4k3162-p16-1.jpg',
-      '/products/cp-unr-4k3162-p16-2.jpg'
+      getImagePath('/products/cp-unr-4k3162-p16-1.jpg'),
+      getImagePath('/products/cp-unr-4k3162-p16-2.jpg')
     ]
   },
   {
@@ -101,8 +102,8 @@ const products: Product[] = [
       'IR Range: 60 Mtr.'
     ],
     images: [
-      '/products/cp-unc-tc81zml6c-md-1.jpg',
-      '/products/cp-unc-tc81zml6c-md-2.jpg'
+      getImagePath('/products/cp-unc-tc81zml6c-md-1.jpg'),
+      getImagePath('/products/cp-unc-tc81zml6c-md-2.jpg')
     ]
   }
 ];

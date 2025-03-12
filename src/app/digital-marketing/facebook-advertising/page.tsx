@@ -9,7 +9,7 @@ const FacebookAdvertisingPage = () => {
     <ServicePageLayout
       title="Facebook Advertising Services"
       description="Drive growth with targeted Facebook & Instagram advertising campaigns"
-      heroImage="/images/services/facebook-advertising-hero.jpg"
+      heroImage={getImagePath("/images/services/facebook-advertising-hero.jpg")}
     >
       <div className="space-y-16">
         {/* Introduction */}
@@ -182,7 +182,7 @@ const FacebookAdvertisingPage = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 items-center">
             <div className="relative h-[400px]">
               <Image
-                src="/images/services/facebook-advertising-benefits.jpg"
+                src={getImagePath("/images/services/facebook-advertising-benefits.jpg")}
                 alt="Facebook Advertising Benefits"
                 fill
                 className="object-cover"

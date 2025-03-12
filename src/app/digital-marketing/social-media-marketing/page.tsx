@@ -7,7 +7,7 @@ const SocialMediaMarketingPage = () => {
     <ServicePageLayout
       title="Social Media Marketing Services"
       description="Build brand awareness and engage your audience with strategic social media marketing"
-      heroImage="/images/services/social-media-marketing-hero.jpg"
+      heroImage={getImagePath("/images/services/social-media-marketing-hero.jpg")}
     >
       <div className="space-y-16">
         {/* Introduction */}
@@ -214,7 +214,7 @@ const SocialMediaMarketingPage = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 items-center">
             <div className="relative h-[400px]">
               <Image
-                src="/images/services/social-media-marketing-benefits.jpg"
+                src={getImagePath("/images/services/social-media-marketing-benefits.jpg")}
                 alt="Social Media Marketing Benefits"
                 fill
                 className="object-cover"

@@ -2,6 +2,7 @@
 
 import React from 'react';
 import Image from 'next/image';
+import { getImagePath } from '../../../utils/imagePath';
 import ServicePageLayout from '../../../components/ServicePageLayout';
 
 const TikTokAdvertisingPage = () => {
@@ -9,7 +10,7 @@ const TikTokAdvertisingPage = () => {
     <ServicePageLayout
       title="TikTok Advertising Services"
       description="Drive engagement and growth with creative TikTok advertising campaigns"
-      heroImage="/images/services/tiktok-advertising-hero.jpg"
+      heroImage={getImagePath('/images/services/tiktok-advertising-hero.jpg')}
     >
       <div className="space-y-16">
         {/* Introduction */}
@@ -181,7 +182,7 @@ const TikTokAdvertisingPage = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 items-center">
             <div className="relative h-[400px]">
               <Image
-                src="/images/services/tiktok-advertising-benefits.jpg"
+                src={getImagePath('/images/services/tiktok-advertising-benefits.jpg')}
                 alt="TikTok Advertising Benefits"
                 fill
                 className="object-cover"

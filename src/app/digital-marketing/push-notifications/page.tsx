@@ -7,7 +7,7 @@ const PushNotificationsPage = () => {
     <ServicePageLayout
       title="Push Notification Services"
       description="Drive engagement and retention with strategic push notification campaigns"
-      heroImage="/images/services/push-notifications-hero.jpg"
+      heroImage={getImagePath("/images/services/push-notifications-hero.jpg")}
     >
       <div className="space-y-16">
         {/* Introduction */}
@@ -206,7 +206,7 @@ const PushNotificationsPage = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 items-center">
             <div className="relative h-[400px]">
               <Image
-                src="/images/services/push-notifications-benefits.jpg"
+                src={getImagePath("/images/services/push-notifications-benefits.jpg")}
                 alt="Push Notifications Benefits"
                 fill
                 className="object-cover"

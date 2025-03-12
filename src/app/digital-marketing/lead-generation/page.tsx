@@ -7,7 +7,7 @@ const LeadGenerationPage = () => {
     <ServicePageLayout
       title="Lead Generation Services"
       description="Drive business growth with targeted lead generation strategies"
-      heroImage="/images/services/lead-generation-hero.jpg"
+      heroImage={getImagePath("/images/services/lead-generation-hero.jpg")}
     >
       <div className="space-y-16">
         {/* Introduction */}
@@ -179,7 +179,7 @@ const LeadGenerationPage = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 items-center">
             <div className="relative h-[400px]">
               <Image
-                src="/images/services/lead-generation-benefits.jpg"
+                src={getImagePath("/images/services/lead-generation-benefits.jpg")}
                 alt="Lead Generation Benefits"
                 fill
                 className="object-cover"

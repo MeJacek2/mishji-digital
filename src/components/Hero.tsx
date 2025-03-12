@@ -2,25 +2,26 @@
 
 import React, { useEffect, useState, useRef } from 'react';
 import Image from 'next/image';
+import { getImagePath } from '../utils/imagePath';
 
 const leftImages = [
   {
-    url: '/hero/led-wall.jpg',
+    url: getImagePath('/hero/led-wall.jpg'),
     alt: 'LED Video Wall'
   },
   {
-    url: '/hero/digital-display.jpg',
+    url: getImagePath('/hero/digital-display.jpg'),
     alt: 'Digital Display'
   }
 ];
 
 const rightImages = [
   {
-    url: '/hero/interactive-display.jpg',
+    url: getImagePath('/hero/interactive-display.jpg'),
     alt: 'Interactive Display'
   },
   {
-    url: '/hero/digital-signage.jpg',
+    url: getImagePath('/hero/digital-signage.jpg'),
     alt: 'Digital Signage'
   }
 ];
@@ -159,7 +160,7 @@ const Hero = () => {
             }}
           >
             <source 
-              src="/hero/background-loop.mp4" 
+              src={getImagePath('/hero/background-loop.mp4')}
               type="video/mp4"
             />
           </video>
